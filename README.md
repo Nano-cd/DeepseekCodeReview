@@ -19,17 +19,17 @@
 
 安装依赖
 pip install openai argparse
-bash
+
 python code_review.py [-h] [-f FILE]
 选项：
 -h, --help 显示帮助信息
 -f FILE, --file FILE 指定要审查的代码文件路径（默认：coze.txt）
-python
-... existing code ...
+
+
 client = OpenAI(api_key="您的API密钥", base_url="https://api.deepseek.com")
-... existing code ...
-markdown
-代码质量报告 - example.py
+
+
+代码质量报告 - main.py
 问题摘要
 严重问题: 2 个
 警告事项: 3 个
@@ -38,4 +38,4 @@ markdown
 ERROR 级别问题
 位置: 第15-18行
 描述: 未处理数据库连接异常
-建议: 添加try-except块处理连接超时情况
+
